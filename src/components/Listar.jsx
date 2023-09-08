@@ -5,8 +5,6 @@ import "../css/Listar.css";
 export default function Listar() {
   const [usuarios, setUsuarios] = useState([]);
 
-  
-  
   const fetchAPI = async () => {
     const urlLista = 'http://localhost:8000/user/';
     try {

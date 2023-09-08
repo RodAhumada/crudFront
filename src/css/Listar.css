@@ -9,12 +9,17 @@
   color: var(--textoClaro);
 }
 
-.fila td{
+.fila td {
   background-color: var(--cuarto);
   color: var(--textoOscuro);
   margin-left: 5px;
   padding: 2px 0;
   text-align: center;
+}
+
+.fila th {
+  padding: 4px 0;
+  font-size: 1.2em;
 }
 
 .button {
