@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaPenToSquare, FaTrashCan } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import "../css/Listar.css";
 
 export default function Listar() {
@@ -46,9 +47,12 @@ export default function Listar() {
                 <button className="button editar">
                   <FaPenToSquare />
                 </button>
-                <button className="button eliminar">
-                  <FaTrashCan />
-                </button>
+                <Link to={`eliminar/${data.id}`}>
+                  <button className="button eliminar">
+                    <FaTrashCan />
+                  </button>
+                </Link>
+                
               </td>
             </tr>            
           </tbody>

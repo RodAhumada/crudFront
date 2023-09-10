@@ -25,6 +25,7 @@ button {
   background-color: var(--segundo);
   color: var(--textoClaro);
   border-radius: 15px;
+  padding-top: 2px;
 }
 
 .buscador {
@@ -52,10 +53,10 @@ button {
 }
 
 .buscador .buscar, .agregar .add, .back {
-  width: 25px;
-  height: 25px;
-  /* border: none; */
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  padding-top: 3px;
 }
 
 .buscar:hover, .add:hover, .back:hover {

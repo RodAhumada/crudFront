@@ -28,7 +28,8 @@ export default function Agregar() {
       const createUser = await fetch(urlSetUser, requestOptions);
       const createUserJSON = await createUser.json();
       const data = await createUserJSON.mensaje;
-      navigate(-1);
+      console.log(data);
+      setTimeout(() => navigate(-1), 1000);
     } catch (error){
       console.log(error);
     }
@@ -74,7 +75,7 @@ export default function Agregar() {
           </div>
         </div>        
         <div className="botones">
-          <button type="submit" className="guardar">
+          <button type="submit" className="btn-accion guardar">
             Guardar
           </button>
         </div>
